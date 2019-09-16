@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.shakil.androidtaptoprogress.Circle
+        android:id="@+id/circle_curve"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tapandhold_buttonHeight_outter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/tap_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tapandhold_buttonHeight_middle"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/taptransparnt"
+        android:paddingTop="@dimen/curve_width">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tapandhold_buttonHeight_inner"
+            android:background="@drawable/tapbg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:text="@string/taptoload"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

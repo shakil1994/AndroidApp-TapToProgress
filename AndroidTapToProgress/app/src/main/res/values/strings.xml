@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidTapToProgress</string>
+    <string name="taptoload">Tap to load</string>
+</resources>
