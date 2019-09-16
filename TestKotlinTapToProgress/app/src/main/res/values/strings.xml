@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestKotlinTapToProgress</string>
+    <string name="taptoload">Tap to load</string>
+</resources>
